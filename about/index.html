@@ -34,6 +34,10 @@
 
 
 
+<script src="https://cdn.staticfile.org/waline/2.15.5/waline.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/waline/2.15.5/waline.min.css" />
+<link rel="stylesheet" href="https://cdn.staticfile.org/waline/2.15.5/waline-meta.min.css" />
+
 
 
 
@@ -175,13 +179,17 @@
 <h2 id="账号"><a href="#账号" class="headerlink" title="账号"></a>账号</h2><table>
 <thead>
 <tr>
-<th><strong>QQ</strong></th>
-<th><strong>3330434793</strong></th>
+<th>网站</th>
+<th>账号</th>
 </tr>
 </thead>
 <tbody><tr>
+<td><strong>QQ</strong></td>
+<td><strong>3330434793</strong></td>
+</tr>
+<tr>
 <td><strong>mail</strong></td>
-<td><a href="mailto:&#x68;&#111;&#112;&#x65;&#108;&#105;&#108;&#97;&#x73;&#64;&#x6f;&#117;&#x74;&#x6c;&#111;&#x6f;&#107;&#x2e;&#99;&#111;&#109;">&#x68;&#111;&#112;&#x65;&#108;&#105;&#108;&#97;&#x73;&#64;&#x6f;&#117;&#x74;&#x6c;&#111;&#x6f;&#107;&#x2e;&#99;&#111;&#109;</a></td>
+<td><a href="mailto:&#x68;&#x6f;&#x70;&#x65;&#108;&#x69;&#x6c;&#97;&#115;&#x40;&#x6f;&#117;&#x74;&#x6c;&#x6f;&#x6f;&#107;&#x2e;&#x63;&#x6f;&#x6d;">&#x68;&#x6f;&#x70;&#x65;&#108;&#x69;&#x6c;&#97;&#115;&#x40;&#x6f;&#117;&#x74;&#x6c;&#x6f;&#x6f;&#107;&#x2e;&#x63;&#x6f;&#x6d;</a></td>
 </tr>
 <tr>
 <td><strong>GitHub</strong></td>
@@ -203,6 +211,10 @@
     
     
     
+    
+    <div id="comment">
+        <div id="waline-container"></div>
+    </div>
     
     
     
@@ -239,6 +251,23 @@
         
         
 
+
+<script>
+    Waline.init({
+        el: "#waline-container",
+        serverURL: "https://blog-comment-30qe1upo5-hopelilas.vercel.app/",
+        commentCount: true,
+        pageview: false,
+        emoji: "https://unpkg.com/@waline/emojis@1.2.0/weibo,https://unpkg.com/@waline/emojis@1.2.0/alus,https://unpkg.com/@waline/emojis@1.2.0/bilibili,https://unpkg.com/@waline/emojis@1.2.0/qq,https://unpkg.com/@waline/emojis@1.2.0/tieba,https://unpkg.com/@waline/emojis@1.2.0/tw-emoji".split(","),
+        meta: "nick,mail,link".split(","),
+        requiredMeta: "nick".split(","),
+        lang: "zh-CN",
+        wordLimit: 0,
+        pageSize: "10",
+        login: "enable",
+        
+    });
+</script>
 
 
 
