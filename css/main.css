@@ -976,3 +976,16 @@ ol li {
 table {
     width: 100%;
 }
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://img1.imgtp.com/2023/09/21/0XRAlN5j.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1;
+}
